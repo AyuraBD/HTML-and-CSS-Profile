@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+	overflow-x: hidden;
+	background-color: #000!important;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff!important;
+}
+header{
+	padding: 20px 0px;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+}
+.header-fixed{
+	background-color:#4F45E5;
+	-webkit-box-shadow: 0 8px 26px -14px #fff;
+	-moz-box-shadow: 0 8px 26px -14px #fff;
+	box-shadow: 0 8px 26px -14px #fff;
+	padding: 10px 0px;
+	font-size: 30px!important;
+}
+header h3{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 35px;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+}
+.contact{
+	padding: 200px 0px 100px 0px;
+	position: relative;
+}
+.contact-heading{
+	margin-bottom: 40px;
+}
+.contact-heading h2{
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-text-fill-color: #000;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #4F46E5;
+}
+.contact-heading h2::after{
+	position: absolute;
+	content: "";
+	width: 90px;
+	height: 3px;
+	background-color:#4F46E5;
+	bottom: -10px;
+	transform: translate(-190%, -50%);
+	border-radius: 30%;
+	margin: auto;
+}
+.contact-heading p{
+	width: 700px;
+	font-size: 18px;
+	color: #807e7e;
+	font-weight: 400;
+	margin: auto;
+}
+.contact .info{
+	display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border: 1px solid #565657;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 20px 0px;
+    align-items: center;
+    transition: all 0.5s;
+}
+.contact .info:hover{
+	border: 1px solid #4F46E5;
+}
+.contact .info:hover h5{
+	color: #4F45E5;
+}
+.contact .info .icon{
+	margin-right: 40px;
+}
+.contact .info .icon i{
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 1px solid #444445;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+.contact .info:hover .icon i{
+	background-color: #4F46E5!important;
+	border: 1px solid #4F45E5;
+	width: 50px;
+	height: 50px;
+	color: #000;
+}
+.contact .info h5{
+	font-size: 25px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #fff;
+	transition: all 0.5s;
+}
+.contact .info p{
+	font-size: 16px;
+	margin-bottom: 0px;
+	font-weight: 0;
+	color: #807e7e;
+}
+
+.contact form{
+	padding: 20px 10px;
+}
+.contact form .form{
+	background-color: transparent;
+	border: 1px solid #565657;
+	display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.contact form .form:hover, .contact form .form:focus{
+	border: 1px solid #4F46E5;
+	outline: 0!important;
+}
+.contact form .btn{
+	padding: 10px 40px;
+	background-color: #4F46E5;
+	border: 1px solid #4F46E5;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #000;
+	transition: all 0.5s;
+}
+.contact form .btn:hover, .contact form .btn:focus{
+	outline: 0;
+	border: 1px solid #4F46E5;
+	color: #4F46E5;
+	background-color: transparent;
+}
+::placeholder {
+  color: #565657;
+  opacity: 1; /* Firefox */
+  font-size: 16px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #565657;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #565657;
+}
+
+footer{
+	text-align: center;
+	padding: 20px 0px;
+	font-size: 16px;
+	background-color:#4F45E5;
+}
+footer p{
+	margin: 0px;
+}
+@media (max-width: 776px){
+	header{
+		padding: 15px 0px;
+	}
+	header h3{
+		font-size: 30px;
+	}
+	.contact-heading h2{
+		font-size: 30px;
+	}
+	.contact-heading h2::after{
+		transform: translate(-155%, -50%);
+	}
+	.contact-heading p{
+		width: 100%;
+	}
+	.address-info{
+		margin-bottom: 30px;
+	}
+	.contact form .btn{
+		padding: 10px 30px;
+		font-size: 15px;
+	}
+	.contact .btn-center{
+		text-align: center;
+	}
+	footer p{
+		font-size: 14px;
+	}
+
+}
+
